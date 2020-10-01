@@ -1,0 +1,14 @@
+# Local Visual Studio Code files
+.vscode
+
+# Python
+__pycache__
+
+# Application specific
+*.json
+*.sql
+output.txt
+*reportout.txt
+*.swp
+logs/
+app.db
