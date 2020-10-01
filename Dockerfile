@@ -12,6 +12,6 @@ COPY . /flask_template
 
 WORKDIR /flask_template
 
-ENV FLASK_APP app.py
+ENV FLASK_APP "app:create_app"
 
-CMD [ "pipenv", "run", "gunicorn", "-w", "4", "-b", ":80", "app:create_app" ]
+CMD [ "pipenv", "run", "gunicorn", "-w", "4", "-b", ":80", "app:create_app()" ]
